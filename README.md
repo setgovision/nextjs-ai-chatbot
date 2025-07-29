@@ -73,3 +73,12 @@ Your app template should now be running on [localhost:3000](http://localhost:300
   </iframe>
 </div>
 https://www.youtube.com/watch?v=dQw4w9WgXcQ
+<div style={{ marginTop: '40px' }}>
+  <h3>संपर्क करें</h3>
+  <form onSubmit={(e) => { e.preventDefault(); alert('आपका संदेश भेज दिया गया है!'); }} style={{ maxWidth: '400px', margin: '0 auto' }}>
+    <input type="text" placeholder="आपका नाम" required style={{ padding: '10px', width: '100%', marginBottom: '10px' }} />
+    <input type="email" placeholder="ईमेल" required style={{ padding: '10px', width: '100%', marginBottom: '10px' }} />
+    <textarea placeholder="संदेश लिखें..." required style={{ padding: '10px', width: '100%', marginBottom: '10px' }} />
+    <button type="submit" style={{ padding: '10px 20px' }}>भेजें</button>
+  </form>
+</div>
